@@ -58,6 +58,9 @@ object Basics {
   def addAndMultiplyAndDivide(x: Int, y: Int)(multiplyBy: Int)(divideBy: Int): Int = {
     (x + y) * multiplyBy / divideBy
   }
+  
+  case class Point(x: Int, y: Int)
+
 }
 
 
@@ -73,7 +76,6 @@ and they are compared by value (unlike classes, whose instances are compared by 
 additionally useful for pattern matching.
 */
 
-case class Point(x: Int, y: Int)
 
 // Objects are single instances of their own definitions. You can think of them as singletons of their own classes.
 object IdFactory {
